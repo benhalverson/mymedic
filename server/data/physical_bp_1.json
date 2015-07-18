@@ -1,0 +1,14 @@
+{
+  "id": "user1",
+  "indicator": "physical",
+  "subIndicator": "bp",
+  "week": 1,
+  "mon": 2,
+  "tue": 4,
+  "wed": 5,
+  "thu": 6,
+  "fri": 7,
+  "sat": 10,
+  "sun": 50,
+  "target": null
+}
