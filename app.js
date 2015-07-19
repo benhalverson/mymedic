@@ -1,5 +1,4 @@
 'use strict';
-
 angular
   .module('mymedic', [
     'ngAnimate',
@@ -13,23 +12,23 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'mainCtrl'
+        //controllerAs: 'main'
       })
       .when('/physical', {
         templateUrl: 'views/physical.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'mainCtrl'
+        //controllerAs: 'main'
       })
       .when('/emotional', {
         templateUrl: 'views/emotional.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'mainCtrl'
+        //controllerAs: 'main'
       })
       .when('/brain', {
         templateUrl: 'views/brain.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'mainCtrl'
+        //controllerAs: 'main'
       })
       .otherwise({
         redirectTo: '/'

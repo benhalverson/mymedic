@@ -26,8 +26,6 @@ function getFile(obj, url, key) {
   };
 }
 
-
-
 var cognition = {
   "prefix": "brain",
   "adaptability": "",
