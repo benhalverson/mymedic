@@ -2,5 +2,4 @@ server/.idea
 server/node_modules
 server/server.iml
 vendor/vendor.iml
-vendor/*
 mymedic.iml
