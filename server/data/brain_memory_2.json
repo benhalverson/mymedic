@@ -1,0 +1,15 @@
+{
+	"id": "user1",
+	"indicator": "brain",
+	"subIndicator": "memory",
+	"week": 2,
+	"mon": 70,
+	"tue": null,
+	"wed": null,
+	"thu": null,
+	"fri": null,
+	"sat": 60,
+	"sun": 75,
+	"target": 100
+
+}

@@ -1,0 +1,14 @@
+{
+  "id": "user1",
+  "indicator": "physical",
+  "subIndicator": "running",
+  "week": 1,
+  "mon": 0,
+  "tue": 0,
+  "wed": 10.1,
+  "thu": 14.3,
+  "fri": 29.8,
+  "sat": 30.0,
+  "sun": 5.0,
+  "target": 210
+}

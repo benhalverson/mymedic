@@ -1,0 +1,16 @@
+{
+	"id": "user1",
+	"indicator": "brain",
+	"subIndicator": "sleep",
+	"week": 2,
+	"mon": 7.5,
+	"tue": 7.0,
+	"wed": 6.5,
+	"thu": 6.0,
+	"fri": 7.0,
+	"sat": 8.0,
+	"sun": 8.1,
+	"target": 7.5
+
+
+}
