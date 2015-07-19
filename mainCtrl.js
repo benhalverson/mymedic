@@ -11,7 +11,7 @@ angular
   ];
 
   $scope.chartSeries = [
-    {"name": "Brain Health", "data": [33, 33, 33]},
+    {"name": ["Brain Health"], "data": [33, 33, 33]},
 
 
   ];
@@ -21,11 +21,6 @@ angular
       chart: {
         type: 'pie'
       },
-      plotOptions: {
-        series: {
-          stacking: ''
-        }
-      }
     },
     series: $scope.chartSeries,
     credits: {
@@ -33,6 +28,6 @@ angular
     },
     loading: false,
     size: {}
-  }
+  };
 
 });
