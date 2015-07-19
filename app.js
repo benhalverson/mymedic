@@ -26,7 +26,7 @@ angular
         controller: 'mainCtrl',
         controllerAs: 'main'
       })
-      .when('/emotional', {
+      .when('/brain', {
         templateUrl: 'views/brain.html',
         controller: 'mainCtrl',
         controllerAs: 'main'

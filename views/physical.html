@@ -31,15 +31,9 @@
           <th>title 3</th>
         </thead>
         <tbody>
-          <tr>
-            <td>data pt 1</td>
-            <td>data pt 2</td>
-            <td>data pt 3</td>
-          </tr>
-          <tr>
-            <td>data pt 1</td>
-            <td>data pt 2</td>
-            <td>data pt 3</td>
+          <tr ng-repeat="data in tabledata">
+            <td>{{tabledata.text}}</td>
+            <td>{{tabledata.body}}</td>
           </tr>
         </tbody>
       </table>
