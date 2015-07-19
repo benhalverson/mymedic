@@ -23,9 +23,10 @@ function getFile(url) {
   var file = dataDir + "/" + entity.indicator + "_" + entity.subIndicator + "_" + entity.week + ".json";
   if (fs.existsSync(file)) {
     try {
-      return fs.readFileSync(file);
+      var res = JSON.parse(fs.readFileSync(file));
+      return JSON.stringify(res.root[0], null, 2);
     } catch (e) {
-      throw new Error("Cannot read " + file + " for the request " + url);
+      throw new Error("Cannot read/parse " + file + " for the request " + url + ": " + e.message);
     }
   } else {
     throw new Error("File " + file + " is not present for the request " + url);
