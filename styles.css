@@ -1,0 +1,12 @@
+body{
+  background-color: #3C3C3C;
+  color: #fff;
+}
+.circle{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  border-style: solid;
+  border-top-left-radius: 25em;
+}
