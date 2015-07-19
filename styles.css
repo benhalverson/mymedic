@@ -8,5 +8,13 @@ body{
   width: 250px;
   background-color: black;
   border-style: solid;
-  border-top-left-radius: 25em;
+  border-width: 25px;
+}
+
+.innercircle{
+  border-top-left-radius: 25%;
+  height: 250px;
+  width: 250px;
+  background-color: #0B99BC;
+
 }

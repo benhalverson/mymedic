@@ -15,11 +15,16 @@ angular
         controller: 'mainCtrl',
         controllerAs: 'main'
       })
+      .when('/physical', {
+        templateUrl: 'views/physical.html',
+        controller: 'mainCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
       // use the HTML5 History API
       $locationProvider.html5Mode({
-      enabled:true,
+      enabled:false,
       requireBase: false});
   });
