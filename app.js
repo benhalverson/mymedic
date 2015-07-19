@@ -30,6 +30,11 @@ angular
         controller: 'brainCtrl'
         //controllerAs: 'main'
       })
+      .when('/setup', {
+        templateUrl: 'views/setup.html',
+        controller: 'setupCtrl'
+        //controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: "/"
       });
