@@ -1,0 +1,16 @@
+{
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "adaptability",
+      "week": 2,
+      "mon": 7,
+      "tue": 9,
+      "wed": 8,
+      "thu": 8,
+      "fri": 8,
+      "target": 10
+    }
+  ]
+}

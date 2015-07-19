@@ -1,0 +1,18 @@
+{
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "sleep",
+      "week": 1,
+      "mon": 6.5,
+      "tue": 5.9,
+      "wed": 4.2,
+      "thu": 7.4,
+      "fri": 5.5,
+      "sat": 9.2,
+      "sun": 8.1,
+      "target": 7.5
+    }
+  ]
+}

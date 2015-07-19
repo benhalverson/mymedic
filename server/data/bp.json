@@ -1,5 +1,9 @@
 {
-  "min": 80,
-  "max": 140,
-  "unit": "mmHg"
+  "root": [
+    {
+      "min": 80,
+      "max": 140,
+      "unit": "mmHg"
+    }
+  ]
 }

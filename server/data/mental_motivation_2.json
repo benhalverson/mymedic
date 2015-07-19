@@ -1,0 +1,12 @@
+{
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "motivation",
+      "week": 2,
+      "motivation": 50,
+      "target": 100
+    }
+  ]
+}

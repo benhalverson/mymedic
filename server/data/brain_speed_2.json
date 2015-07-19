@@ -1,0 +1,16 @@
+{
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "speed",
+      "week": 2,
+      "mon": 99,
+      "tue": 90,
+      "wed": 85,
+      "thu": 88,
+      "fri": 80,
+      "target": 100
+    }
+  ]
+}
