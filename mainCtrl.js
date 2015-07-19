@@ -3,8 +3,6 @@ angular
 .module('mymedic')
 .controller('mainCtrl', function($scope, $rootScope, $http) {
 
-
-
     $rootScope.week = 1;
     $rootScope.weekMetric = {};
     $rootScope.globalMetric = {};
@@ -20,7 +18,7 @@ angular
           .get(url)
           .success(function(res) {
             obj[key] = res;
-            callback(null, res);
+            return callback(null, res);
           })
           .error(function(err) {
             return callback("Error in getting file: " + err.message);
@@ -98,7 +96,7 @@ angular
           if (err) {
             return callback(new Error("Error while getting file " + ": " + err.message), data);
           }
-          callback();
+          return callback();
         });
       };
     };
@@ -158,7 +156,7 @@ angular
           console.error("Error while generating metrics: " + JSON.stringify(err, null, 2));
           return;
         }
-        callback();
+        return callback();
       });
     }
 
@@ -169,112 +167,61 @@ angular
       console.log(getGlobalData(emotional));
       console.log("WEEK METRICS: \n", JSON.stringify($rootScope.weekMetric, null, 2));
       console.log("GLOBAL METRICS: \n", JSON.stringify($rootScope.globalMetric, null, 2))
-      $scope.rootChart();
+      $scope.chartConfig.series = $rootScope.rootChart();
     };
 
     getDataFromDB(generateMetrics);
 
-    var getChartValue = function (obj) {
+    $rootScope.getChartValue = function (obj) {
       return (obj.value*100/obj.target)
     };
 
-    var getRemChartValue = function(obj) {
+    $rootScope.getRemChartValue = function(obj) {
       return 100 - (obj.value*100/obj.target)
     }
 
-    $scope.rootChart = function() {
+    $rootScope.rootChart = function() {
       console.log("Charting root chart..");
       var g = $rootScope.globalMetric;
       var data = [
         {
           "name": "Physical Health",
-          "y": getChartValue(g.physical),
+          "y": $rootScope.getChartValue(g.physical),
           color: '#FF00FF'
         },
         {
           "name": "Missed by",
-          "y": getRemChartValue(g.physical),
+          "y": $rootScope.getRemChartValue(g.physical),
           color: 'white'
         },
         {
           "name": "Emotional Health",
-          "y": getChartValue(g.mental),
+          "y": $rootScope.getChartValue(g.mental),
           color: '#FFFF00'
         },
         {
           "name": "Missed by",
-          "y": getRemChartValue(g.mental),
+          "y": $rootScope.getRemChartValue(g.mental),
           color: 'white'
         },
         {
           "name": "Brain Health",
-          "y": getChartValue(g.brain),
+          "y": $rootScope.getChartValue(g.brain),
           color: '#00FFFF'
         },
         {
           "name": "Missed by",
-          "y": getRemChartValue(g.brain),
+          "y": $rootScope.getRemChartValue(g.brain),
           color: 'white'
         }
       ];
-      $scope.chartConfig.series = [{
+
+      return [{
         "name": "Health Metric",
         "colorByPoint": true,
         "data":data
       }];
     };
-
-    $scope.mentalChart = function() {
-      console.log("Charting mental chart..");
-      var m = $rootScope.weekMetric.mental;
-      var data = [
-        {
-          "name": "Happiness",
-          "y": getChartValue(m.happiness),
-          color: '#FF00FF'
-        },
-        {
-          "name": "Missed by",
-          "y": getRemChartValue(m.happiness),
-          color: 'white'
-        },
-        {
-          "name": "Motivation",
-          "y": getChartValue(m.motivation),
-          color: '#FFFF00'
-        },
-        {
-          "name": "Missed by",
-          "y": getRemChartValue(m.motivation),
-          color: 'white'
-        },
-        {
-          "name": "Satisfaction",
-          "y": getChartValue(m.satisfaction),
-          color: '#00FFFF'
-        },
-        {
-          "name": "Missed by",
-          "y": getRemChartValue(m.satisfaction),
-          color: 'white'
-        }
-      ];
-      $scope.chartConfig.series = [{
-        "name": "Emotional Health",
-        "colorByPoint": true,
-        "data":data
-      }];
-    }
-
-    $scope.replaceAllSeries = function () {
-      var data = [
-        { name: "first", data: [10] },
-        { name: "second", data: [3] },
-        { name: "third", data: [13] }
-      ];
-
-      $scope.chartConfig.series = data;
-  };
 
   $scope.chartSeries = [{
   }];
@@ -314,7 +261,4 @@ angular
     loading: false,
     size: {}
   };
-
-
-
 });

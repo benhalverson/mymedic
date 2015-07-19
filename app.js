@@ -17,21 +17,21 @@ angular
       })
       .when('/physical', {
         templateUrl: 'views/physical.html',
-        controller: 'mainCtrl'
+        controller: 'physicalCtrl'
         //controllerAs: 'main'
       })
       .when('/emotional', {
         templateUrl: 'views/emotional.html',
-        controller: 'mainCtrl'
+        controller: 'emotionalCtrl'
         //controllerAs: 'main'
       })
       .when('/brain', {
         templateUrl: 'views/brain.html',
-        controller: 'mainCtrl'
+        controller: 'brainCtrl'
         //controllerAs: 'main'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: "/"
       });
       // use the HTML5 History API
       $locationProvider.html5Mode({

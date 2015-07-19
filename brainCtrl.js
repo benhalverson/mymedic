@@ -1,8 +1,8 @@
 'use strict';
 angular
 .module('mymedic')
-.controller('mainCtrl', function($scope) {
-  console.log('main ctrl loaded');
+.controller('brainCtrl', function($scope) {
+  console.log('brain ctrl loaded');
 
   //highchart code sample
 
