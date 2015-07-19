@@ -11,12 +11,12 @@ angular
         {
           "name": "Completed",
           "data": [m.running.value, m.swimming.value],
-          color: '#FF00FF'
+          color: '#0B99BC'
         },
         {
           "name": "Target",
           "data": [m.running.target-m.running.value, m.swimming.target-m.swimming.value],
-          color: '#AA00AA'
+          color: '#85CCDD'
         }
       ];
       return data;
@@ -40,7 +40,7 @@ angular
           }
         },
         legend: {
-          reversed: true
+          reversed: false
         },
         plotOptions: {
           series: {

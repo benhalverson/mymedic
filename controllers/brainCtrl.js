@@ -34,6 +34,10 @@ angular
         plotBorderWidth: null,
         plotShadow: false,
         type: 'pie'
+        options3d: {
+          enabled: true, 
+          alpha: 45
+        }
       },
       title: {
         text: 'Browser market shares January, 2015 to May, 2015'

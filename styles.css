@@ -1,6 +1,6 @@
 body{
-  background-color: #3C3C3C;
-  color: #fff;
+  background-color: #FFFFFF;
+  color: #3C3C3C;
 }
 .circle{
   border-radius: 50%;
@@ -11,15 +11,16 @@ body{
   border-width: 25px;
 }
 
-.innercircle{
+/*.innercircle{
   border-top-left-radius: 25%;
   height: 250px;
   width: 250px;
   background-color: #0B99BC;
+ */ 
 
 }
 
-@media (min-width: 768px) {
+@/*media (min-width: 768px) {
   .navbar-collapse {
     height: auto;
     border-top: 0;
@@ -56,4 +57,4 @@ body{
 .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
 }
-}
+}*/

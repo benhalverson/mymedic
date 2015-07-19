@@ -189,38 +189,42 @@ angular
         {
           "name": "Physical Health",
           "y": $rootScope.getChartValue(g.physical),
-          color: '#FF00FF'
+          color: '#0B99BC'
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(g.physical),
-          color: 'white'
+          color: '#D1EBF2'
+
         },
         {
           "name": "Emotional Health",
           "y": $rootScope.getChartValue(g.mental),
-          color: '#FFFF00'
+          color: '#D40E52'
+
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(g.mental),
-          color: 'white'
+          color: '#F1B3C8'
+
         },
         {
           "name": "Brain Health",
           "y": $rootScope.getChartValue(g.brain),
-          color: '#00FFFF'
+          color: '#FCDF15'
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(g.brain),
-          color: 'white'
+          color: '#FEF5B5'
         }
       ];
 
       return [{
         "name": "Health Metric",
         "colorByPoint": true,
+        "innerSize": 80,
         "data":data
       }];
     };
