@@ -3,25 +3,36 @@ angular
 .module('mymedic')
 .controller('mainCtrl', function($scope) {
   console.log('main ctrl loaded');
-  $scope.data = [{
-    title: 'Brain Health',
-    'percentage': 33
-  },
-  {
-    title: 'Physical Health',
-    'percentage': 33
-  },
-  {
-    title: 'Emotional Health',
-    'percentage': 33
-  }];
 
-  $scope.tabledata = [{
-    text: 'hello',
-    body: 'hello 2'
-  },
-  {
-    text: 'hello',
-    body: 'hello 2'
-  }];
+  //highchart code sample
+
+  $scope.chartTypes = [
+    {"id": "pie", "title": "Pie"}
+  ];
+
+  $scope.chartSeries = [
+    {"name": "Brain Health", "data": [33, 33, 33]},
+
+
+  ];
+
+  $scope.chartConfig = {
+    options: {
+      chart: {
+        type: 'pie'
+      },
+      plotOptions: {
+        series: {
+          stacking: ''
+        }
+      }
+    },
+    series: $scope.chartSeries,
+    credits: {
+      enabled: true
+    },
+    loading: false,
+    size: {}
+  }
+
 });
