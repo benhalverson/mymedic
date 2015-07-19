@@ -9,14 +9,14 @@ angular
       var m = $rootScope.weekMetric.physical;
       var data = [
         {
-          "name": "Completed",
-          "data": [m.running.value, m.swimming.value],
-          color: '#0B99BC'
-        },
-        {
           "name": "Target",
           "data": [m.running.target-m.running.value, m.swimming.target-m.swimming.value],
           color: '#85CCDD'
+        },
+        {
+          "name": "Completed",
+          "data": [m.running.value, m.swimming.value],
+          color: '#0B99BC'
         }
       ];
       return data;
@@ -40,7 +40,7 @@ angular
           }
         },
         legend: {
-          reversed: false
+          reversed: true
         },
         plotOptions: {
           series: {
