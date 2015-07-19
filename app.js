@@ -6,7 +6,8 @@ angular
     'ngMessages',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'highcharts-ng'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
