@@ -1,15 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name mymedic
- * @Angel hack
- *
- *
- * Main module of the application.
- */
 angular
-  .module('angGraderApp', [
+  .module('mymedic', [
     'ngAnimate',
     'ngMessages',
     'ngResource',
@@ -20,7 +12,7 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
+        controller: 'mainCtrl',
         controllerAs: 'main'
       })
       .otherwise({

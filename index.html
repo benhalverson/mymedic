@@ -6,23 +6,9 @@
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body ng-controller="MainCtrl">
-<div class="container">
-  <div class="row">
-<div class="col-md-12">
-  <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="#">Profile</a></li>
-    <li role="presentation"><a href="#">Messages</a></li>
-  </ul>
-</div>
+<body ng-controller="mainCtrl">
+<div class="container" ng-view=""></div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor ullam numquam aperiam voluptas praesentium nobis accusantium distinctio voluptates repudiandae. Autem laboriosam, dicta esse eveniet, officia molestiae maxime eos ducimus.</p>
-    </div>
-  </div>
-</div>
 </div>
 <script src="vendor/jquery/dist/jquery.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
@@ -31,6 +17,8 @@
 <script src="vendor/angular-messages/angular-messages.js"></script>
 <script src="vendor/angular-resource/angular-resource.js"></script>
 <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+<script src="vendor/angular-route/angular-route.js"></script>
 <script src="app.js"></script>
+<script src="mainCtrl.js"></script>
 </body>
 </html>
