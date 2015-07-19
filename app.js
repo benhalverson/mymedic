@@ -1,5 +1,4 @@
 'use strict';
-
 angular
   .module('mymedic', [
     'ngAnimate',
@@ -13,29 +12,29 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'mainCtrl'
+        //controllerAs: 'main'
       })
       .when('/physical', {
         templateUrl: 'views/physical.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'physicalCtrl'
+        //controllerAs: 'main'
       })
       .when('/emotional', {
         templateUrl: 'views/emotional.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'emotionalCtrl'
+        //controllerAs: 'main'
       })
       .when('/brain', {
         templateUrl: 'views/brain.html',
-        controller: 'mainCtrl',
-        controllerAs: 'main'
+        controller: 'brainCtrl'
+        //controllerAs: 'main'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: "/"
       });
       // use the HTML5 History API
       $locationProvider.html5Mode({
-      enabled:false,
-      requireBase: false});
+      enabled:true,
+      requireBase: true});
   });
