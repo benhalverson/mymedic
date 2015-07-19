@@ -1,0 +1,13 @@
+{
+  "id": "user1",
+  "indicator": "brain",
+  "subIndicator": "attention",
+  "week": 2,
+  "mon": 6,
+  "tue": 5,
+  "wed": 8,
+  "thu": 9,
+  "fri": 7,
+  "target": 10,
+
+}

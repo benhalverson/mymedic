@@ -1,0 +1,9 @@
+{
+  "id": "user1",
+  "indicator": "brain",
+  "subIndicator": "satisfaction",
+  "week": 1,
+  "satisfaction": 88,
+  "target": 100,
+
+}
