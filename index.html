@@ -5,22 +5,29 @@
   <title>My medic</title>
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
+   <script src="vendor/jquery/dist/jquery.js"></script>
+   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="vendor/angular/angular.js"></script>
+   <script src="vendor/angular-animate/angular-animate.js"></script>
+   <script src="vendor/angular-messages/angular-messages.js"></script>
+   <script src="vendor/angular-resource/angular-resource.js"></script>
+   <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+   <script src="vendor/angular-route/angular-route.js"></script>
+   <script src="http://code.highcharts.com/stock/highstock.src.js"></script>
+   <script src="vendor/highcharts-ng/dist/highcharts-ng.js"></script>
+   <script src="vendor/async/lib/async.js"></script>
+   <script src="app.js"></script>
+   <script src="controllers/mainCtrl.js"></script>
+   <script src="controllers/emotionalCtrl.js"></script>
+   <script src="controllers/physicalCtrl.js"></script>
+   <script src="controllers/brainCtrl.js"></script>
 </head>
-<body ng-controller="mainCtrl">
-<div class="container" ng-view=""></div>
-</div>
-</div>
-<script src="vendor/jquery/dist/jquery.js"></script>
-<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-<script src="vendor/angular/angular.js"></script>
-<script src="vendor/angular-animate/angular-animate.js"></script>
-<script src="vendor/angular-messages/angular-messages.js"></script>
-<script src="vendor/angular-resource/angular-resource.js"></script>
-<script src="vendor/angular-sanitize/angular-sanitize.js"></script>
-<script src="vendor/angular-route/angular-route.js"></script>
-<script src="http://code.highcharts.com/stock/highstock.src.js"></script>
-<script src="vendor/highcharts-ng/dist/highcharts-ng.js"></script>
-<script src="app.js"></script>
-<script src="mainCtrl.js"></script>
+<body >
+   <div class="container" ng-view=""></div>
+<!--
+
+<script src="emotionalCtrl.js"></script>
+
+-->
 </body>
 </html>

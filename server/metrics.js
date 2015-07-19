@@ -26,8 +26,6 @@ function getFile(obj, url, key) {
   };
 }
 
-
-
 var cognition = {
   "prefix": "brain",
   "adaptability": "",
@@ -50,12 +48,17 @@ var physicalBenchmark = {
 
 var physicalParam = {
   "prefix": "physical",
+  "bp": "",
+  "hr": ""
+}
+
+var physicalParamStatic = {
+  "prefix": "physical",
   "suffix": "static",
   "bp": "",
-  "hr": "",
-  "bpStatic": "",
-  "hrStatic": ""
+  "hr": ""
 }
+
 
 var emotional = {
   "prefix": "mental",
@@ -144,6 +147,7 @@ var getDataFromDB = function(callback) {
   tasks.push(getData(physicalActivities));
   tasks.push(getData(physicalBenchmark));
   tasks.push(getData(physicalParam));
+  tasks.push(getData(physicalParamStatic));
   tasks.push(getData(emotional));
   async.series(tasks, function(err, res) {
     if (err) {
@@ -158,6 +162,7 @@ var generateMetrics = function() {
     console.log(getGlobalData(cognition));
     console.log(getGlobalData(physicalActivities));
     console.log(getGlobalData(physicalParam));
+    console.log(getGlobalData(emotional));
 };
 
 getDataFromDB(generateMetrics);
