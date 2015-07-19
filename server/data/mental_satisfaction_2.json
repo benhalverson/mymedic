@@ -5,7 +5,7 @@
       "indicator": "brain",
       "subIndicator": "satisfaction",
       "week": 2,
-      "satisfaction": 80,
+      "mon": 80,
       "target": 100
     }
   ]

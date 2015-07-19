@@ -5,7 +5,7 @@
       "indicator": "brain",
       "subIndicator": "motivation",
       "week": 1,
-      "motivation": 50,
+      "mon": 50,
       "target": 100
     }
   ]

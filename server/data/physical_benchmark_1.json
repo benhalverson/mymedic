@@ -5,12 +5,14 @@
       "indicator": "physical",
       "subIndicator": "benchmark",
       "week": 1,
-      "VO2max": 27,
-      "benchpress": 50,
-      "deadlift": 200,
-      "miletime": 7.3,
-      "pullups": 7,
-      "flexibility": 10
+      "values": {
+        "VO2max": 27,
+        "benchpress": 50,
+        "deadlift": 200,
+        "miletime": 7.3,
+        "pullups": 7,
+        "flexibility": 10
+      }
     }
   ]
 }
