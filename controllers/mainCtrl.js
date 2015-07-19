@@ -259,7 +259,7 @@ angular
     },
     series: [{}],
     title: {
-      text: 'Fitness Target Completion'
+      text: 'Your Wellness Snapshot'
     },
     loading: false,
     size: {}
