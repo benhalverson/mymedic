@@ -3,6 +3,7 @@ angular
 .module('mymedic')
 .controller('emotionalCtrl', function($scope, $rootScope) {
   console.log('emotional ctrl loaded');
+
     $rootScope.mentalChart = function() {
       console.log("Charting mental chart..");
       var m = $rootScope.weekMetric.mental;
@@ -75,7 +76,7 @@ angular
       },
       series: $rootScope.mentalChart(),
       title: {
-        text: 'Fitness Target Completion'
+        text: 'Emotional Health Target'
       },
       loading: false,
       size: {}

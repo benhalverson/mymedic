@@ -116,8 +116,9 @@ angular
               ++num;
             }
           }
+          var avg = Math.round(total*100/num)/100;
           result[key] = {
-            value: total/num,
+            value: avg,
             target: obj[key]['target']
           }
         }
@@ -135,8 +136,9 @@ angular
         totalPercent += val.value*100/val.target;
         ++num;
       }
+      var avg = Math.round(totalPercent*100/num)/100;
       var resGlobal = {
-        value: totalPercent/num,
+        value: avg,
         target: 100
       };
       $rootScope.globalMetric[obj['prefix']] = resGlobal;
@@ -223,9 +225,6 @@ angular
       }];
     };
 
-  $scope.chartSeries = [{
-  }];
-
   $scope.chartConfig = {
     options: {
       chart: {
@@ -254,7 +253,7 @@ angular
         }
       }
     },
-    series: $scope.chartSeries,
+    series: [{}],
     title: {
       text: 'Fitness Target Completion'
     },
