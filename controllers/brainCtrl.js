@@ -1,70 +1,71 @@
 'use strict';
 angular
 .module('mymedic')
-.controller('brainCtrl', function($scope) {
+.controller('brainCtrl', function($scope, $rootScope) {
   console.log('brain ctrl loaded');
 
-  //highchart code sample
-
-  $scope.chartTypes = [
-    {"id": "pie", "title": "Pie"}
-  ];
-
-  $scope.chartSeries = [{
-    "name": "Target",
-    "colorByPoint": true,
-    "data": [{
-        "name": "Physical Health",
-        "y": 33
-      },
-      {
-        "name": ["Emotional Health"],
-        "y": 33
-      },
-      {
-        "name": ["Brain Health"],
-        "y": 33
-      }
-  ]}];
-
-  $scope.chartConfig = {
-    options: {
-      chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie',
-        options3d: {
-          enabled: true, 
-          alpha: 45
+    $rootScope.brainChart = function() {
+      console.log("Charting brain chart..");
+      var m = $rootScope.weekMetric.brain;
+      var data = [
+        {
+          "name": "Target",
+          "data": [
+              m.adaptability.target-m.adaptability.value,
+              m.attention.target-m.attention.value,
+              m.memory.target-m.memory.value,
+              m.sleep.target- m.sleep.value,
+              m.speed.target- m.speed.value
+            ],
+          color: '#FEF5B5'
+        },
+        {
+          "name": "Completed",
+          "data": [
+              m.adaptability.value,
+              m.attention.value,
+              m.memory.value,
+              m.sleep.value,
+              m.speed.value
+          ],
+          color: '#FCDF15'
         }
-      },
-      title: {
-        text: 'Browser market shares January, 2015 to May, 2015'
-      },
-      tooltip: {
-        pointFormat: '{series.name}: <b>{point.y:.1f}%</b>'
-      },
-      plotOptions: {
-        pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-            enabled: true,
-            format: '<b>{point.name}</b>: {point.y:.1f}',
-            style: {
-              color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-            }
+      ];
+      return data;
+    };
+
+    $scope.chartConfig = {
+      options: {
+        chart: {
+          type: 'bar'
+        },
+        title: {
+          text: 'Stacked bar chart'
+        },
+        xAxis: {
+          categories: ['Adaptability', 'Attention', 'Memory', 'Sleep', 'Speed']
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: 'Score'
+          }
+        },
+        legend: {
+          reversed: true
+        },
+        plotOptions: {
+          series: {
+            stacking: 'normal'
           }
         }
-      }
-    },
-    series: $scope.chartSeries,
-    title: {
-      text: 'Your Health'
-    },
-    loading: false,
-    size: {}
-  };
+      },
+      series: $rootScope.brainChart(),
+      title: {
+        text: 'Brain Health Target Completion'
+      },
+      loading: false,
+      size: {}
+    };
 
 });
