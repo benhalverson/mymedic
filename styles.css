@@ -54,7 +54,13 @@ a:hover {
 .active {
   color:#FCDF15;
 }
-
+.span.btn.btn-primary {
+  margin-left: 40px;
+  background-color: #0B99BC;
+}
+.btn-primary{
+  margin-left: 40px;
+}
 /*
 .navbar-right .dropdown-menu {left:0;right:auto;}
 .navbar-collapse .navbar-nav.navbar-right:last-child {
