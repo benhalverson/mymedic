@@ -2,5 +2,7 @@
 angular
 .module('mymedic')
 .controller('mainCtrl', function($scope) {
+
   
+
 });

@@ -21,6 +21,16 @@ angular
         controller: 'mainCtrl',
         controllerAs: 'main'
       })
+      .when('/emotional', {
+        templateUrl: 'views/emotional.html',
+        controller: 'mainCtrl',
+        controllerAs: 'main'
+      })
+      .when('/emotional', {
+        templateUrl: 'views/brain.html',
+        controller: 'mainCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
