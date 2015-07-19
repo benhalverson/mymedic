@@ -1,5 +1,9 @@
 {
-  "min": 40,
-  "max": 200,
-  "unit": "bpm"
+  "root": [
+    {
+      "min": 40,
+      "max": 200,
+      "unit": "bpm"
+    }
+  ]
 }

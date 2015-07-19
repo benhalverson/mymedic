@@ -1,5 +1,5 @@
 {
-  root: [
+  "root": [
     {
       "id": "user1",
       "indicator": "brain",
@@ -10,7 +10,7 @@
       "wed": 9,
       "thu": 8,
       "fri": 8,
-      "target": 10,
+      "target": 10
     }
   ]
 }

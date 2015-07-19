@@ -1,9 +1,12 @@
 {
-  "id": "user1",
-  "indicator": "brain",
-  "subIndicator": "satisfaction",
-  "week": 2,
-  "satisfaction": 80,
-  "target": 100,
-
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "satisfaction",
+      "week": 2,
+      "satisfaction": 80,
+      "target": 100
+    }
+  ]
 }

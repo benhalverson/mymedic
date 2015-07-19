@@ -1,13 +1,16 @@
 {
-  "id": "user1",
-  "indicator": "brain",
-  "subIndicator": "attention",
-  "week": 1,
-  "mon": 8,
-  "tue": 8,
-  "wed": 7,
-  "thu": 9,
-  "fri": 8,
-  "target": 10,
-
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "attention",
+      "week": 1,
+      "mon": 8,
+      "tue": 8,
+      "wed": 7,
+      "thu": 9,
+      "fri": 8,
+      "target": 10
+    }
+  ]
 }

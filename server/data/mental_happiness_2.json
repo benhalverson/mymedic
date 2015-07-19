@@ -1,15 +1,17 @@
 {
-	"id": "user1",
-	"indicator": "mental",
-	"subIndicator": "happiness",
-	"week": 2,
-	"mon": 3,
-	"tue": 4,
-	"wed": 4,
-	"thu": 4,
-	"fri": 3,
-	"sat": 1,
-	"sun": 3,
-
-
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "mental",
+      "subIndicator": "happiness",
+      "week": 2,
+      "mon": 3,
+      "tue": 4,
+      "wed": 4,
+      "thu": 4,
+      "fri": 3,
+      "sat": 1,
+      "sun": 3
+    }
+  ]
 }

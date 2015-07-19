@@ -1,15 +1,18 @@
 {
-	"id": "user1",
-	"indicator": "brain",
-	"subIndicator": "memory",
-	"week": 1,
-	"mon": 80,
-	"tue": 90,
-	"wed": null,
-	"thu": null,
-	"fri": null,
-	"sat": null,
-	"sun": 70,
-	"target": 100
-
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "brain",
+      "subIndicator": "memory",
+      "week": 1,
+      "mon": 80,
+      "tue": 90,
+      "wed": null,
+      "thu": null,
+      "fri": null,
+      "sat": null,
+      "sun": 70,
+      "target": 100
+    }
+  ]
 }

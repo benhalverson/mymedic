@@ -1,14 +1,18 @@
 {
-  "id": "user1",
-  "indicator": "physical",
-  "subIndicator": "hr",
-  "week": 1,
-  "mon": 80,
-  "tue": 90,
-  "wed": 72,
-  "thu": 96,
-  "fri": 88,
-  "sat": 86,
-  "sun": 80,
-  "target": 80
+  "root": [
+    {
+      "id": "user1",
+      "indicator": "physical",
+      "subIndicator": "hr",
+      "week": 1,
+      "mon": 80,
+      "tue": 90,
+      "wed": 72,
+      "thu": 96,
+      "fri": 88,
+      "sat": 86,
+      "sun": 80,
+      "target": 80
+    }
+  ]
 }
