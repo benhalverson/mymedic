@@ -33,7 +33,7 @@ angular
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
-        type: 'pie'
+        type: 'pie',
         options3d: {
           enabled: true, 
           alpha: 45

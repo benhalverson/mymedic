@@ -11,37 +11,38 @@ angular
         {
           "name": "Happiness",
           "y": $rootScope.getChartValue(m.happiness),
-          color: '#FF00FF'
+          color: '#D40E52'
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(m.happiness),
-          color: 'white'
+          color: '#EEA4BE'
         },
         {
           "name": "Motivation",
           "y": $rootScope.getChartValue(m.motivation),
-          color: '#FFFF00'
+          color: '#DE4A7D'
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(m.motivation),
-          color: 'white'
+          color: '#EEA4BE'
         },
         {
           "name": "Satisfaction",
           "y": $rootScope.getChartValue(m.satisfaction),
-          color: '#00FFFF'
+          color: '#E986A8'
         },
         {
           "name": "Missed by",
           "y": $rootScope.getRemChartValue(m.satisfaction),
-          color: 'white'
+          color: '#EEA4BE'
         }
       ];
       return [{
         "name": "Emotional Health",
         "colorByPoint": true,
+        "innerSize": 80,
         "data":data
       }];
     }
